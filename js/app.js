@@ -63,7 +63,7 @@ switch (asesinoNum) {
 // Funcion de la declaracion de la testigo.
 function declaracionTestigo(sexo, ropa, cabello) {
   alert(
-    `La señora Pedraza dijo: Ese día yo escuche la voz de un personaje de sexo ${sexo}, que le hablaba a alguien por telefono. Mire por la ventana y me parecio ver un buzo con capucha color ${ropa}. Finalmente, pasado un rato, me acerque a la casa de Hector para ver si estaba bien y encontre el cadaver, en la mano tenia un mechon de pelo ${cabello}. Le juro que no se nada mas.`
+    `La señora Pedraza dijo: Esa noche yo escuche la voz de un personaje de sexo ${sexo}, que le hablaba a alguien por telefono. Mire por la ventana y me parecio ver un buzo con capucha color ${ropa}. Finalmente, pasado un rato, me acerque a la casa de Hector para ver si estaba bien y encontre el cadaver, en la mano tenia un mechon de pelo ${cabello}. Le juro que no se nada mas.`
   );
 }
 
