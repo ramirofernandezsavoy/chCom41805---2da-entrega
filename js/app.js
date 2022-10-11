@@ -67,12 +67,15 @@ function declaracionTestigo(sexo, ropa, cabello) {
   );
 }
 
-declaracionTestigo(asesino.sexo, asesino.ropa, asesino.cabello);
+// declaracionTestigo(asesino.sexo, asesino.ropa, asesino.cabello);
+// Alert antes de usar los onClick
 
 // Simulador de Expediente
 let expedienteFiltrado = "";
+
+function revisarExpedientes() {
 let pista = prompt(
-  "Ingresa un numero segun corresponda:\n(Tené en cuenta que solo podes usar el expediente una vez)\n¿Qué pista queres usar?\n1- Ropa\n2- Cabello\n3- Sexo");
+  "Ingresa un numero segun corresponda:\n¿Qué pista queres usar?\n1- Ropa\n2- Cabello\n3- Sexo");
 
 switch (pista) {
   case "1":
@@ -101,7 +104,7 @@ switch (pista) {
             console.log(expedienteFiltrado);
         break;
       default:
-        alert("Hubo un error. El asesino escapó.");
+        alert("Hubo un error.");
         break;
     }
     break;
@@ -126,7 +129,7 @@ switch (pista) {
             console.log(expedienteFiltrado);
           break;        
         default:
-          alert("Hubo un error. El asesino escapó.");
+          alert("Hubo un error.");
           break;
       }
     break;
@@ -146,19 +149,23 @@ switch (pista) {
             console.log(expedienteFiltrado);
           break;        
         default:
-          alert("Hubo un error. El asesino escapó.");
+          alert("Hubo un error.");
           break;
       }
     break;
-  default: alert("Hubo un error. El asesino escapó.");
+  default: alert("Hubo un error.");
     break;
 }
+}
 
-
-
-
-
-
+function acusarAsesino() {
+    let acusacion = prompt("Escriba el nombre completo del asesino")
+    if (acusacion == asesino.nombre) {
+        alert("¡La policia tiene al asesino en custodia! Felicitaciones detective!");
+    } else {
+        alert("Luego de equivocarse en un momento crucial, usted permitio que el asesino escapase. Su jefe ha decidido despedirlo.\nPor suerte, quizás yo pueda ayudarlo.\nLe dejo aqui mi codigo de descuento de Coderhouse para estudiar programacion, puesto que lo suyo claramente no es la investigacion.\ncoder.ramiro.7c1a\nQue tenga buen día.")
+    }
+}
 
 // LOGS USADOS PARA IR VERIFICANDO LAS DISTINTAS ETAPAS DEL PROCESO.
 

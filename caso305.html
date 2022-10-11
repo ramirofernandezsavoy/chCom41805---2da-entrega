@@ -14,19 +14,26 @@
             <div class="descText">
             <p>La vecina esta conmocionada aun, pero los cigarrillos y el café han logrado manejar su ansiedad.</p>
             <p>Dice que esta lista para declarar.</p>
-            <button type="button" id="startButton">
+            <button type="button" id="startButton" onclick="declaracionTestigo(asesino.sexo, asesino.ropa, asesino.cabello)">
                 Escuchar el testimonio.
             </button>           
             </div>
             <div class="descText" id="expDiv">
                 <p>Con la informacion que proporciono la testigo quizas podamos descubrir al asesino.</p>
                 <p>¿Quiere acceder a los datos de los detenidos?</p>
-                <button type="button" id="startButton">
+                <button type="button" id="startButton" onclick="revisarExpedientes()">
                     Acceder a los expedientes.
                 </button>           
                 </div>
+                <div class="descText">
+                    <p>¿Ya cruzó los datos de los posibles sospechosos?</p>
+                    <p>¿Está listo para realizar una acusacion formal?</p>
+                    <button type="button" id="startButton" onclick="acusarAsesino()">
+                        Desenmascarar al asesino.
+                    </button>           
+                    </div>
         </div>
     </section>
-<!-- <script src="js\app.js"></script> -->
+<script src="js\app.js"></script>
 </body>
 </html>
