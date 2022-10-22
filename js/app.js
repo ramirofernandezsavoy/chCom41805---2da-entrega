@@ -1,37 +1,38 @@
 // Clase constructora de las personas.
 class Persona {
-  constructor(id, nombre, ropa, sexo, cabello, culpable) {
+  constructor(id, nombre, ojos, sexo, cabello, apodo, culpable) {
     this.id = id;
     this.nombre = nombre;
-    this.ropa = ropa;
+    this.ojos = ojos;
     this.sexo = sexo;
     this.cabello = cabello;
+    this.apodo = apodo;
     this.culpable = false;
   }
 }
 
 // Creacion de distintos personajes.
 const 
-  personaje1 = new Persona(1, "Roberto Gomez", "azul", "masculino", "canoso"),
-  personaje2 = new Persona(2, "Maria Aveldaño", "azul", "femenino", "rubio"),
-  personaje3 = new Persona(3, "Adrian Polano", "roja", "masculino", "rubio"),
-  personaje4 = new Persona(4, "Valeria Singh", "verde", "femenino", "negro"),
-  personaje5 = new Persona(5, "Mario Fernandez", "negra", "masculino", "negro");
+  personaje1 = new Persona(1, "Fernando Tasca", "marron", "masculino", "castaño", "cabezon"),
+  personaje2 = new Persona(2, "Nicolas Aubin", "celeste", "masculino", "rubio", "el viejo"),
+  personaje3 = new Persona(3, "Damian Massolo", "negro", "masculino", "negro", "lince"),
+  personaje4 = new Persona(4, "Facundo Bajano", "marron", "masculino", "colorado", "batracio"),
+  personaje5 = new Persona(5, "Gabriel Tolmasky", "verde", "masculino", "negro", "judio"),
+  personaje6 = new Persona(6, "Lucas Romero", "verde", "masculino", "castaño", "no tiene"),
+  personaje7 = new Persona(7, "Valeria Singh", "marron", "femenino", "rubio", "aida"),
+  personaje8 = new Persona(8, "Pamela Aldaz", "verde", "femenino", "castaño", "pam"),
+  personaje9 = new Persona(9, "Evelyn Gout", "negro", "femenino", "negro", "eve"),
+  personaje10 = new Persona(10, "Glenda Romano", "negro", "femenino", "rosa", "glen");
 
 // Creacion de array de sospechosos.
-const sospechosos = [
-  personaje1,
-  personaje2,
-  personaje3,
-  personaje4,
-  personaje5,
-];
+const sospechosos = [personaje1, personaje2, personaje3, personaje4, personaje5, personaje6, personaje7, personaje8, personaje9, personaje10 ];
 
 // Seleccion del asesino.
 function randomN() {
-  return Math.floor(Math.random() * 5 + 1);
+  return Math.floor(Math.random() * sospechosos.length + 1);
 }
 const asesinoNum = randomN();
+console.log(asesinoNum);
 
 let asesino = "";
 switch (asesinoNum) {
@@ -55,6 +56,26 @@ switch (asesinoNum) {
     personaje5.culpable = true;
     asesino = sospechosos[4];
     break;
+  case 6:
+    personaje6.culpable = true;
+    asesino = sospechosos[5];
+    break;
+  case 7:
+    personaje7.culpable = true;
+    asesino = sospechosos[6];
+    break;
+  case 8:
+    personaje8.culpable = true;
+    asesino = sospechosos[7];
+    break;
+  case 9:
+    personaje9.culpable = true;
+    asesino = sospechosos[8];
+    break;
+  case 10:
+    personaje10.culpable = true;
+    asesino = sospechosos[9];
+    break;         
   default:
     alert("Ocurrio un error. Intente de nuevo");
     break;
@@ -169,7 +190,7 @@ function acusarAsesino() {
 
 // LOGS USADOS PARA IR VERIFICANDO LAS DISTINTAS ETAPAS DEL PROCESO.
 
-// console.log(sospechosos);
-// console.log(expedienteFiltrado);
-// console.log(asesino);
-// console.log(asesinoNum);
+console.log(sospechosos);
+console.log(expedienteFiltrado);
+console.log(asesino);
+console.log(asesinoNum);
