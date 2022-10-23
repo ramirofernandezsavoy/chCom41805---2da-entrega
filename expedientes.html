@@ -12,8 +12,7 @@
 <body>    
     <section class="sec3">                        
         <form class="formBusqueda">
-            <h3>Perfil:</h3>
-            <input type="text" name="Nombre" id="nameInput" placeholder="Introduzca un nombre" class="fields">
+            <h3>Perfil:</h3>            
             <select name="Sexo" id="sexInput" class="fields">
                 <option value="def">---Indique el sexo---</option>
                 <option value="mas">Masculino</option>
@@ -23,15 +22,23 @@
             <input type="text" name="Cabello" id="hairInput" placeholder="Introduzca un color de cabello" class="fields">
             <input type="text" name="Apodo" id="nickInput" placeholder="Introduzca un apodo" class="fields">            
             <input type="submit" id="btnSearch" class="formButton" value="Buscar">
-        </form>
+            <a href="caso305.html"><button type="button">
+                Volver atras.
+            </button></a>
+        </form>        
         <div class="resultExp">
+            <div class="dossier">
             <h3>Dossier</h3>
-            <strong>Nombre: </strong><p>>None</p>
-            <strong>Sexo: </strong><p>>None</p>
-            <strong>Ojos: </strong><p>>None</p>
-            <strong>Cabello: </strong><p>>None</p>
-            <strong>Apodo: </strong><p>>None</p>
-            <a href="caso305.html">Volver</a>            
+            <strong>Nombre: </strong><p id="nombreFinal">>None</p>
+            <strong>Sexo: </strong><p id="sexoFinal"> >None</p>
+            <strong>Ojos: </strong><p id="ojosFinal">>None</p>
+            <strong>Cabello: </strong><p id="cabelloFinal">>None</p>
+            <strong>Apodo: </strong><p id="apodoFinal">>None</p>
+            <button>Emitir orden de arresto!</button>
+            </div>
+            <div>
+            <img src="https://dummyimage.com/200x400/000/fff" alt="" id="imgFinal">
+            </div>
         </div>   
     </section>
 </body>
