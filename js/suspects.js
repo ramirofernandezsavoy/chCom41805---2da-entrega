@@ -1,6 +1,6 @@
 // Clase constructora de las personas.
 class Persona {
-  constructor(id, nombre, ojos, sexo, cabello, apodo, ropa, culpable) {
+  constructor(id, nombre, ojos, sexo, cabello, apodo, ropa, img, culpable) {
     this.id = id;
     this.nombre = nombre;
     this.ojos = ojos;
@@ -8,6 +8,7 @@ class Persona {
     this.cabello = cabello;
     this.apodo = apodo;
     this.ropa = ropa;
+    this.img = img;
     this.culpable = false;
   }
 }
@@ -20,7 +21,8 @@ const personaje1 = new Persona(
     "masculino",
     "castaño",
     "cabezon",
-    "negro"
+    "negro",
+    "fernandotasca.jpg"
   ),
   personaje2 = new Persona(
     2,
@@ -29,7 +31,8 @@ const personaje1 = new Persona(
     "masculino",
     "rubio",
     "el viejo",
-    "marron con rayas"
+    "marron con rayas",
+    "nicolasaubin.jpg"
   ),
   personaje3 = new Persona(
     3,
@@ -38,7 +41,8 @@ const personaje1 = new Persona(
     "masculino",
     "negro",
     "lince",
-    "negro"
+    "negro",
+    "damianmassolo.jpg"
   ),
   personaje4 = new Persona(
     4,
@@ -47,7 +51,8 @@ const personaje1 = new Persona(
     "masculino",
     "colorado",
     "batracio",
-    "gris"
+    "gris",
+    "facubajano.jpg"
   ),
   personaje5 = new Persona(
     5,
@@ -56,7 +61,8 @@ const personaje1 = new Persona(
     "masculino",
     "negro",
     "judio",
-    "verde"
+    "verde",
+    "gabytolma.jpg"
   ),
   personaje6 = new Persona(
     6,
@@ -65,7 +71,8 @@ const personaje1 = new Persona(
     "masculino",
     "castaño",
     "Ele",
-    "rojo"
+    "rojo",
+    "lucasromero.jpg"
   ),
   personaje7 = new Persona(
     7,
@@ -74,7 +81,8 @@ const personaje1 = new Persona(
     "femenino",
     "rubio",
     "aida",
-    "azul"
+    "azul",
+    "valeriasingh.jpg"
   ),
   personaje8 = new Persona(
     8,
@@ -83,7 +91,8 @@ const personaje1 = new Persona(
     "femenino",
     "castaño",
     "pam",
-    "gris"
+    "gris",
+    "pamaldaz.jpg"
   ),
   personaje9 = new Persona(
     9,
@@ -92,7 +101,8 @@ const personaje1 = new Persona(
     "femenino",
     "negro",
     "eve",
-    "azul"
+    "azul",
+    "evegout.jpg"
   ),
   personaje10 = new Persona(
     10,
@@ -101,7 +111,8 @@ const personaje1 = new Persona(
     "femenino",
     "rosa",
     "glen",
-    "negro"
+    "negro",
+    "glendaromano.jpg"
   );
 
 // Creacion de array de sospechosos.

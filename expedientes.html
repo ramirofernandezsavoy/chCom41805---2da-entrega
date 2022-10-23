@@ -11,12 +11,12 @@
 
 <body>    
     <section class="sec3">                        
-        <form class="formBusqueda">
+        <form class="formBusqueda" id="form">
             <h3>Perfil:</h3>            
             <select name="Sexo" id="sexInput" class="fields">
                 <option value="def">---Indique el sexo---</option>
-                <option value="mas">Masculino</option>
-                <option value="fem">Femenino</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
             </select>
             <input type="text" name="Ojos" id="eyesInput" placeholder="Introduzca un color de ojos" class="fields">
             <input type="text" name="Cabello" id="hairInput" placeholder="Introduzca un color de cabello" class="fields">
@@ -34,13 +34,15 @@
             <strong>Ojos: </strong><p id="ojosFinal">>None</p>
             <strong>Cabello: </strong><p id="cabelloFinal">>None</p>
             <strong>Apodo: </strong><p id="apodoFinal">>None</p>
-            <button>Emitir orden de arresto!</button>
+            <button id="endButton">Emitir orden de arresto!</button>
             </div>
             <div>
             <img src="https://dummyimage.com/200x400/000/fff" alt="" id="imgFinal">
             </div>
         </div>   
     </section>
+    <script src="js\suspects.js"></script>    
+    <script src="js\filter.js"></script>
 </body>
 
 </html>
