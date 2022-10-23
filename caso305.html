@@ -10,27 +10,31 @@
 </head>
 <body>
     
-    <section>
+    <section class="dashboard">
         <div class="container">
             <div class="testigo">
                 <h3>Testigo</h3>
-                <p>La señora Ileana Pedraza es la vecina de la victima y fue quien encontro el cuerpo.</p>
-                <button>Escuchar declaracion</button>
+                <p>La señora Ileana Pedraza es la vecina de la victima y fue quien encontro el cuerpo. Su declaracion puede ser vital para la investigacion.</p>
+                <button id="witnessButton">Escuchar declaracion</button>
             </div>
             <div class="informe">
                 <h3>Mensaje entrante</h3>
-                <p>B</p>
-                <button>Escuchar mensaje</button>
+                <p>Tienes un mensaje de voz de parte de uno de tus colegas en la estacion. Puede aportar datos importantes sobre el sospechoso.</p>
+                <button id="msjButton">Escuchar mensaje</button>
             </div>
             <div class="expediente">
-                <h3>Expedientes</h3>
-                <p>C</p>
-                <button>Ir a los expedientes</button>
+                <h3>Camara de seguridad</h3>
+                <p>Una camara de seguridad, captó algunas imagenes que pueden resultarnos utiles.</p>
+                <button id="camButton">Ver camara de seguridad.</button>
             </div>
-            <div class="texto">                
-                <p>D</p>
+            <div class="texto">
+                <div></div>                
+                <div class="commBox">
+                    <p id="text1"></p>
+                    <p id="text2"></p>
+                </div>                
             </div>
-          </div>        
+        </div>        
     </section>
 <script src="js\app.js"></script>
 </body>
