@@ -8,19 +8,19 @@ const sexoFiltrado = sospechosos.filter((el)=>{
 console.log(sexoFiltrado);
 
 const ojosFiltrado = sexoFiltrado.filter((el)=>{
-    return el.ojos == "verde"    
+    return el.ojos == "celeste"    
 })
 
 console.log(ojosFiltrado);
 
 const cabelloFiltrado = ojosFiltrado.filter((el)=>{
-    return el.cabello == "negro"    
+    return el.cabello == "rubio"    
 })
 
 console.log(cabelloFiltrado);
 
 const finalFiltrado = cabelloFiltrado.filter((el)=>{
-    return el.apodo == "judio"
+    return el.apodo == "el viejo"
 })
 
 console.log(finalFiltrado);
@@ -53,14 +53,7 @@ sexoFinal.innerText = finalFiltrado[0].sexo
 ojosFinal.innerText = finalFiltrado[0].ojos
 cabelloFinal.innerText = finalFiltrado[0].cabello
 apodoFinal.innerText = finalFiltrado[0].apodo
-imgFinal.innerHtml = `<img src="../img/${finalFiltrado[0].img}" alt="">`
+imgFinal.src = `./img/${finalFiltrado[0].img}`
 
 console.log(finalFiltrado[0].img);
-
-// console.log(nombreFinal);
-// console.log(sexoFinal);
-// console.log(ojosFinal);
-// console.log(cabelloFinal);
-// console.log(apodoFinal);
-// console.log(imgFinal);
-
+console.log(imgFinal);
