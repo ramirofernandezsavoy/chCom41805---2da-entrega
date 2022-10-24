@@ -1,45 +1,55 @@
 // Filtrado y muestreo de sospechoso.
 // Funcion Filtrar Sospechoso
+const formulario = document.querySelector("#form");
+const finalForm = "";
 
-const sexoFiltrado = sospechosos.filter((el)=>{
-    return el.sexo == "masculino"    
+let sexoAsesino = "";
+let ojosAsesino = "";
+let cabelloASesino = "";
+let apodoAsesino = "";
+
+formulario.addEventListener("submit", (e) =>{
+    e.preventDefault()
+    sexoAsesino = sexInput.value
+    ojosAsesino = eyesInput.value
+    cabelloASesino = hairInput.value
+    apodoAsesino = nickInput.value
+    console.log(sexoAsesino);
+    console.log(ojosAsesino);
+    console.log(cabelloASesino);
+    console.log(apodoAsesino);
+
 })
 
-console.log(sexoFiltrado);
+const sexoFiltrado = "";
+const ojosFiltrado = "";
+const cabelloFiltrado = "";
+const finalFiltrado = "";
 
-const ojosFiltrado = sexoFiltrado.filter((el)=>{
-    return el.ojos == "celeste"    
-})
-
-console.log(ojosFiltrado);
-
-const cabelloFiltrado = ojosFiltrado.filter((el)=>{
-    return el.cabello == "rubio"    
-})
-
-console.log(cabelloFiltrado);
-
-const finalFiltrado = cabelloFiltrado.filter((el)=>{
-    return el.apodo == "el viejo"
-})
+function filtro() {
+    sexoFiltrado = sospechosos.filter((el)=>{
+        return el.sexo === "masculino"    
+    })    
+    
+    ojosFiltrado = sexoFiltrado.filter((el)=>{
+        return el.ojos === "marron"    
+    })    
+    
+    cabelloFiltrado = ojosFiltrado.filter((el)=>{
+        return el.cabello === "castaño"    
+    })
+    
+    finalFiltrado = cabelloFiltrado.filter((el)=>{
+        return el.apodo === "cabezon"
+    })
+}  
 
 console.log(finalFiltrado);
+console.log(sexoAsesino);
+console.log(ojosAsesino);
+console.log(cabelloASesino);
+console.log(apodoAsesino); 
 
-
-// const formulario = document.querySelector("#form");
-
-// formulario.addEventListener("submit", (e) =>{
-//     e.preventDefault()
-//     let form = e.target;    
-//     let sospechosoFiltrado = filtrarSospechoso(sospechosos, sexInput.value.toLowerCase());
-//     console.log(sospechosoFiltrado);
-
-
-//     console.log(sexInput.value);
-//     console.log(eyesInput.value);
-//     console.log(hairInput.value);
-//     console.log(nickInput.value); 
-// })
 
 const nombreFinal = document.querySelector("#nombreFinal"),
 sexoFinal = document.querySelector("#sexoFinal"),
@@ -54,6 +64,3 @@ ojosFinal.innerText = finalFiltrado[0].ojos
 cabelloFinal.innerText = finalFiltrado[0].cabello
 apodoFinal.innerText = finalFiltrado[0].apodo
 imgFinal.src = `./img/${finalFiltrado[0].img}`
-
-console.log(finalFiltrado[0].img);
-console.log(imgFinal);
