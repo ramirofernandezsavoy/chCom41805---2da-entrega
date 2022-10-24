@@ -30,7 +30,6 @@ function filtro() {
     console.log(finalFiltrado);
     escribir(finalFiltrado);
 }
-
 function escribir(finalFiltrado){
     nombreFinal.innerText = finalFiltrado[0].nombre
     sexoFinal.innerText = finalFiltrado[0].sexo
@@ -39,19 +38,9 @@ function escribir(finalFiltrado){
     apodoFinal.innerText = finalFiltrado[0].apodo
     imgFinal.src = `./img/${finalFiltrado[0].img}`    
 }
-
 const nombreFinal = document.querySelector("#nombreFinal"),
 sexoFinal = document.querySelector("#sexoFinal"),
 ojosFinal = document.querySelector("#ojosFinal"),
 cabelloFinal = document.querySelector("#cabelloFinal"),
 apodoFinal = document.querySelector("#apodoFinal"),
 imgFinal = document.querySelector("#imgFinal");
-
-function escribir(finalFiltrado) {
-    nombreFinal.innerText = finalFiltrado[0].nombre
-    sexoFinal.innerText = finalFiltrado[0].sexo
-    ojosFinal.innerText = finalFiltrado[0].ojos
-    cabelloFinal.innerText = finalFiltrado[0].cabello
-    apodoFinal.innerText = finalFiltrado[0].apodo
-    imgFinal.src = `./img/${finalFiltrado[0].img}`
-}
