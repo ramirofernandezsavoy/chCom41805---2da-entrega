@@ -194,5 +194,4 @@ if (localStorage.getItem("culpable")) {
   pickAssa ();
   localStorage.setItem("culpable", JSON.stringify(asesino));
 }
-
 console.log(asesino);
