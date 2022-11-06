@@ -1,5 +1,3 @@
-
-
 // Identificacion y funcionalidad de Objetos
 const witnessButton = document.querySelector("#witnessButton"),
   msjButton = document.querySelector("#msjButton"),
@@ -24,3 +22,10 @@ camButton.addEventListener("click", () => {
 startOver.addEventListener("click", () => {
   localStorage.clear();
 });
+
+// For Each que use para imprimir el array sospechosos y pasarlo a JSON.
+// sospechosos.forEach(element => {  
+//   let tito = JSON.stringify(element)
+//   console.log(tito);
+// });
+
