@@ -244,3 +244,53 @@ width: 90%;
   color: black;
   font-style: normal;
 }
+
+/* Estilos del dossier */
+.sec4 {
+  display: flex;
+  flex-direction: column;  ;  
+}
+
+.sec4 h3 {
+  color: white;
+}
+
+.contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.11);
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  flex-direction: row-reverse;  
+  margin: 10px;
+  border-radius: 10px;
+  
+}
+
+.card-image {
+  width: 40%;  
+  display: flex;
+  justify-content: right;
+}
+
+.card-content {
+  padding: 10px;
+  background-color: rgba(170, 216, 176, 0.781);
+  width: 60%;
+  font-size: 0.7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.card-content span {
+  font-weight: bolder;
+}
