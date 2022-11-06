@@ -14,10 +14,10 @@ const pintarResultado = () => {
         Swal.fire({
             title: 'Felicitaciones!',
             text: 'El asesino fue detenido, el jefe te espera en su despacho con un merecido ascenso!',
-            imageUrl: '../img/ascenso.gif',
+            imageUrl: './img/ascenso.gif',
             imageWidth: 400,
             imageHeight: 300,
-            imageAlt: 'arresto fem o mas',
+            imageAlt: 'ascenso img',
           })
     } else {
         Swal.fire({
@@ -26,7 +26,7 @@ const pintarResultado = () => {
             imageUrl: '../img/despido.gif',
             imageWidth: 400,
             imageHeight: 300,
-            imageAlt: 'despido',
+            imageAlt: 'despido img',
           });
     }
 }
