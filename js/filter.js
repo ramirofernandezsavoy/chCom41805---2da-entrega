@@ -2,29 +2,20 @@
 // Funcion Filtrar Sospechoso
 const formulario = document.querySelector("#form");
 const finalForm = "";
-const saWin = Swal.fire({
-    title: 'Felicitaciones!',
-    text: 'Gracias a tu colaboracion la policia pudo detender al asesino.',
-    imageUrl: '../img/arrestoMas.jpg',
-    imageWidth: 600,
-    imageHeight: 400,
-    imageAlt: 'arresto fem o mas',
-  })
-
-const saLose = Swal.fire({
-    title: 'Inocente',
-    text: 'El sospechoso fue encontrado inocente. El jefe te espera en su oficina',
-    imageUrl: '../img/despido.gif',
-    imageWidth: 400,
-    imageHeight: 300,
-    imageAlt: 'despido',
-  });
-
 let sexoAsesino = "";
 let ojosAsesino = "";
 let cabelloASesino = "";
 let apodoAsesino = "";
 let wol = "";
+
+// Funcion pintar resultado.
+const pintarResultado = () => {
+    if (wol) {
+        console.log("Ganaste pelotudo");
+    } else {
+        console.log("Perdiste pelotudo");
+    }
+}
 
 formulario.addEventListener("submit", (e) =>{    
     filtro();
@@ -78,11 +69,9 @@ endButton.addEventListener("click", () => {
         cancelButtonColor: '#d33',
         confirmButtonText: 'Si, emitir orden!'
       }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire(
-            'Se emitio tu orden.',
-            wol == true ? saWin : saLose                        
-          )
+        if (result.isConfirmed) {          
+          pintarResultado()
+          localStorage.clear();          
         }
       })
   });
