@@ -4,7 +4,7 @@ const witnessButton = document.querySelector("#witnessButton"),
   camButton = document.querySelector("#camButton"),
   interlocutor = document.querySelector("#text1"),
   mensaje = document.querySelector("#text2"),
-  startOver = document.querySelector("#clearButton");
+  startOver = document.querySelector("#clearButton");  
 
 // Funcionalidad de los botones.
 witnessButton.addEventListener("click", () => {  
@@ -22,6 +22,7 @@ camButton.addEventListener("click", () => {
 startOver.addEventListener("click", () => {
   localStorage.clear();
 });
+
 
 // For Each que use para imprimir el array sospechosos y pasarlo a JSON.
 // sospechosos.forEach(element => {  

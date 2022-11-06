@@ -2,11 +2,29 @@
 // Funcion Filtrar Sospechoso
 const formulario = document.querySelector("#form");
 const finalForm = "";
+const saWin = Swal.fire({
+    title: 'Felicitaciones!',
+    text: 'Gracias a tu colaboracion la policia pudo detender al asesino.',
+    imageUrl: '../img/arrestoMas.jpg',
+    imageWidth: 600,
+    imageHeight: 400,
+    imageAlt: 'arresto fem o mas',
+  })
+
+const saLose = Swal.fire({
+    title: 'Inocente',
+    text: 'El sospechoso fue encontrado inocente. El jefe te espera en su oficina',
+    imageUrl: '../img/despido.gif',
+    imageWidth: 400,
+    imageHeight: 300,
+    imageAlt: 'despido',
+  });
 
 let sexoAsesino = "";
 let ojosAsesino = "";
 let cabelloASesino = "";
 let apodoAsesino = "";
+let wol = "";
 
 formulario.addEventListener("submit", (e) =>{    
     filtro();
@@ -29,6 +47,9 @@ function filtro() {
     })
     console.log(finalFiltrado);
     escribir(finalFiltrado);
+    finalFiltrado[0].nombre == asesino.nombre ? wol = true : wol = false;
+    console.log(asesino.nombre);  
+    console.log(wol);
 }
 function escribir(finalFiltrado){
     nombreFinal.innerText = finalFiltrado[0].nombre
@@ -43,4 +64,25 @@ sexoFinal = document.querySelector("#sexoFinal"),
 ojosFinal = document.querySelector("#ojosFinal"),
 cabelloFinal = document.querySelector("#cabelloFinal"),
 apodoFinal = document.querySelector("#apodoFinal"),
-imgFinal = document.querySelector("#imgFinal");
+imgFinal = document.querySelector("#imgFinal"),
+endButton = document.querySelector("#endButton");
+
+// Boton Final (Y Libreria)
+endButton.addEventListener("click", () => {
+    Swal.fire({
+        title: ' Emitiendo orden de arresto',
+        text: "Esta seguro que desea arrestar a este sospechoso?",
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#090125',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Si, emitir orden!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'Se emitio tu orden.',
+            wol == true ? saWin : saLose                        
+          )
+        }
+      })
+  });
