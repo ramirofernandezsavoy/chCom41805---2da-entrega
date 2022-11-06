@@ -23,7 +23,7 @@ const pintarResultado = () => {
         Swal.fire({
             title: 'Inocente',
             text: 'El sospechoso fue encontrado inocente. El jefe te espera en su oficina para darte su codigo de CoderHouse porque claramente ser detective no es lo tuyo.',
-            imageUrl: '../img/despido.gif',
+            imageUrl: './img/despido.gif',
             imageWidth: 400,
             imageHeight: 300,
             imageAlt: 'despido img',
