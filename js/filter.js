@@ -11,9 +11,23 @@ let wol = "";
 // Funcion pintar resultado.
 const pintarResultado = () => {
     if (wol) {
-        console.log("Ganaste pelotudo");
+        Swal.fire({
+            title: 'Felicitaciones!',
+            text: 'El asesino fue detenido, el jefe te espera en su despacho con un merecido ascenso!',
+            imageUrl: '../img/ascenso.gif',
+            imageWidth: 400,
+            imageHeight: 300,
+            imageAlt: 'arresto fem o mas',
+          })
     } else {
-        console.log("Perdiste pelotudo");
+        Swal.fire({
+            title: 'Inocente',
+            text: 'El sospechoso fue encontrado inocente. El jefe te espera en su oficina para darte su codigo de CoderHouse porque claramente ser detective no es lo tuyo.',
+            imageUrl: '../img/despido.gif',
+            imageWidth: 400,
+            imageHeight: 300,
+            imageAlt: 'despido',
+          });
     }
 }
 
