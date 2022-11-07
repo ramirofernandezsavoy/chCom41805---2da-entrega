@@ -6,7 +6,7 @@ const renderDossier = (array) => {
       html = `
             <div class="card">
                 <div class="card-image">
-                <img src="../img/${img}">
+                <img src="./img/${img}">
                 </div>
                 <div class="card-content">
                 <span class="card-title">${nombre.toUpperCase()}</span>
