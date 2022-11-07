@@ -1,9 +1,9 @@
 contenedor = document.querySelector(".contenedor");
 const renderDossier = (array) => {
-    let html;
-    for (const item of array) {
-      const { nombre, sexo, ojos, cabello, apodo, img } = item;  
-      html = `
+  let html;
+  for (const item of array) {
+    const { nombre, sexo, ojos, cabello, apodo, img } = item;
+    html = `
             <div class="card">
                 <div class="card-image">
                 <img src="./img/${img}">
@@ -17,15 +17,13 @@ const renderDossier = (array) => {
                 </div>          
             </div>
         `;
-        contenedor.innerHTML += html;
-    }}
+    contenedor.innerHTML += html;
+  }
+};
 
-fetch('./js/personajes.json')
-.then(res=> res.json())
-.then(datos=>{
+fetch("./js/personajes.json")
+  .then((res) => res.json())
+  .then((datos) => {
     console.log(datos);
-    renderDossier(datos);    
-});
-
-
-
+    renderDossier(datos);
+  });
