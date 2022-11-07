@@ -10,44 +10,48 @@ section {
   background-image: url(../img/corredor.jpg);
   background-size: cover;
   width: auto;
-  height: 700px;
+  height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.493);
+  background-color: rgba(0, 1, 20, 0.884);
   background-blend-mode: overlay;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  padding: 15px;  
 }
-.sec2 {
-  background-image: url(../img/vecina.jpg);
-  background-color: rgba(0, 0, 0, 0.911);
+
+.sec1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center
 }
-.hero {
-  padding: 10px;
-  width: 80%;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.774);
-  box-shadow: 2px -2px 75px 40px rgba(0, 0, 0, 0.93);
-  -webkit-box-shadow: 2px -2px 75px 40px rgba(0, 0, 0, 0.93);
-  -moz-box-shadow: 2px -2px 75px 40px rgba(0, 0, 0, 0.93);
+
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #03030396;
+  border-radius: 15px;
+  padding: 20px;
+  width: 40%;
+}
+
+.hero {  
+  width: 100%;  
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   color: white;
-}
-
-.hero p {
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 
 .desc {
   display: flex;
   justify-content: space-evenly;
-  width: 70%;
-  background-color: #000000ab;
+  width: 100%;  
   height: auto;
 }
 
@@ -65,40 +69,47 @@ section {
 }
 
 .descText h3 {
-  padding: 20px;
+  font-size: 2em;
 }
 .descText p {
-  font-size: 0.8em;
-  padding: 10px;
+  font-size: 1em;
+  padding: 15px;
 }
 
+.sec2 {
+  background-image: url(../img/vecina.jpg);
+  background-color: rgba(0, 1, 20, 0.884);
+  justify-content: space-evenly;
+}
+
+.container305 {
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Estilo de los Botones */
 button {
-  background-color: #090125;
+  background-color: #172901;
   color: white;
   padding: 5px;
+  margin: 5px;
   border-radius: 5px;
+  width: 200px;
 }
 
 button:hover {
-  transform: scale(110%);
+  transform: scale(105%);  
+background-color: #2c3f16;
   transition: 0.7s;
-  box-shadow: 1px -1px 5px 5px rgba(0, 0, 0, 0.185);
-  -webkit-box-shadow: 1px -1px 5px 5px rgba(0, 0, 0, 0.185);
-  -moz-box-shadow: 1px -1px 5px 5px rgba(0, 0, 0, 0.185);
+  box-shadow: 1px -1px 3px 3px rgba(101, 99, 131, 0.158);
+  -webkit-box-shadow: 1px -1px 3px 3px rgba(101, 99, 131, 0.158);
+  -moz-box-shadow: 1px -1px 3px 3px rgba(101, 99, 131, 0.158);
 }
 
 .dashboard {
   height: 100vh;
-}
-
-.commBox {
-  display: flex;
-  flex-direction: column;
-  height: 90%;
-  width: 70%;
-  justify-content: center;
-  align-items: left;  
-  font-size: 1.6em;
 }
 
 /* GRID DE CASO 305 */
@@ -124,6 +135,8 @@ width: 90%;
   justify-content: space-around;
   align-items: center;
   color: white;
+  border-radius: 10px;
+  font-size: 0.9em;
 }
 
 .informe {
@@ -135,6 +148,8 @@ width: 90%;
   justify-content: space-around;
   align-items: center;
   color: white;
+  border-radius: 10px;
+  font-size: 0.9em;
 }
 
 .expediente {
@@ -146,19 +161,31 @@ width: 90%;
   justify-content: space-around;
   align-items: center;
   color: white;
+  border-radius: 10px;
+  font-size: 0.9em;
 }
 
 .texto {
   grid-area: texto;
-  background-color: rgb(0, 0, 0);
-  height: 300px;  
-  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.616);  
+  padding: 5px;
   display: flex;  
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(208, 241, 158);
-  font-size: 0.8em;
+  color: rgb(255, 255, 255);   
+  border-radius: 10px;
+}
+
+.commBox {
+  display: flex;
+  flex-direction: column;  
+  width: 90%;  
+  font-size: 1.3em;  
+  }
+
+.commBox p {
+  padding: 5px;
 }
 
 /* Seccion Expedientes */
@@ -166,30 +193,33 @@ width: 90%;
   display: flex;
   flex-direction: row;  
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.705);
+  background-image: url(../img/cuartel.jpg);
+  background-color: rgba(0, 0, 0, 0.76);
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 10px;  
 }
 
-.formBusqueda {  
-  height: 300px;
-  width: 50%;
-  padding: 10px;
+.formBusqueda {    
+  width: 30%;
+  padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.712);
-  font-size: 22px;
+  border-radius: 15px;
+  font-size: 20px;
+  
 }
 
 .fields {
   padding: 5px;
+  margin: 5px;
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(69, 158, 69);
+  border: 2px solid #274205e8;
   width: 300px;
 }
 
@@ -210,9 +240,10 @@ width: 90%;
   padding: 10px;  
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(250, 235, 215, 0.733);
-  text-align: left;
-  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.712);
+  text-align: left;  
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.493);
 }
 
 .dossier {
@@ -220,35 +251,40 @@ width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: left;
+  align-items: center;
+  color: white;
 }
 
 .dossier h3 {
-  padding: 20px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 1.5em;
 }
 
 .dossier strong {
-  padding: 5px;
-}
-.resultExp h3 {
-  text-align: center;
-  font-weight: 900;
+  padding: 3px;
+  margin: 5px;
+  font-size: 1em;  
 }
 
 .resultExp p {
-  color: gray;
+  color: rgb(158, 156, 156);
   font-style: italic;
+  font-size: 1.4em;
+  padding: 5px;  
 }
 
-.resultExp p strong {
-  color: black;
-  font-style: normal;
+.resultExp button {
+  margin-top: 10px;
 }
 
 /* Estilos del dossier */
 .sec4 {
   display: flex;
-  flex-direction: column;  ;  
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../img/dossier.jpg);
+
 }
 
 .sec4 h3 {
@@ -258,8 +294,10 @@ width: 90%;
 .contenedor{
   display: flex;
   flex-wrap: wrap;
+  width: 90vw;
   justify-content: space-around; 
-  
+  background-color: #000000d2;
+  border-radius: 15px;
 }
 
 .card {
@@ -281,14 +319,14 @@ width: 90%;
 }
 
 .card-content {
-  padding: 10px;
+  padding: 5px;
   background-color: rgba(170, 216, 176, 0.781);
   width: 60%;
-  font-size: 0.7em;
+  font-size: 0.8em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  text-align: left;
+  text-align: left;  
 }
 
 .card-content span {

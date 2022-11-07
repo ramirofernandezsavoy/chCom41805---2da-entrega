@@ -4,7 +4,7 @@
 {"id":3,"nombre":"Damian Massolo","ojos":"negro","sexo":"masculino","cabello":"negro","apodo":"lince","ropa":"negro","img":"damianmassolo.jpg","culpable":false},
 {"id":4,"nombre":"Facundo Bajano","ojos":"marron","sexo":"masculino","cabello":"colorado","apodo":"batracio","ropa":"gris","img":"facubajano.jpg","culpable":false},
 {"id":5,"nombre":"Gabriel Tolmasky","ojos":"verde","sexo":"masculino","cabello":"negro","apodo":"judio","ropa":"verde","img":"gabytolma.jpg","culpable":false},
-{"id":6,"nombre":"Lucas Romero","ojos":"verde","sexo":"masculino","cabello":"castaño","apodo":"Ele","ropa":"rojo","img":"lucasromero.jpg","culpable":false},
+{"id":6,"nombre":"Lucas Romero","ojos":"verde","sexo":"masculino","cabello":"castaño","apodo":"ele","ropa":"rojo","img":"lucasromero.jpg","culpable":false},
 {"id":7,"nombre":"Valeria Singh","ojos":"marron","sexo":"femenino","cabello":"rubio","apodo":"aida","ropa":"azul","img":"valeriasingh.jpg","culpable":false},
 {"id":8,"nombre":"Pamela Aldaz","ojos":"verde","sexo":"femenino","cabello":"castaño","apodo":"pam","ropa":"gris","img":"pamaldaz.jpg","culpable":false},
 {"id":9,"nombre":"Evelyn Gout","ojos":"negro","sexo":"femenino","cabello":"negro","apodo":"eve","ropa":"azul","img":"evegout.jpg","culpable":false},

@@ -70,7 +70,7 @@ const personaje1 = new Persona(
     "verde",
     "masculino",
     "castaño",
-    "Ele",
+    "ele",
     "rojo",
     "lucasromero.jpg"
   ),
