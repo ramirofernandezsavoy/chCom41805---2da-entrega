@@ -32,8 +32,8 @@ const pintarResultado = () => {
 }
 
 formulario.addEventListener("submit", (e) =>{    
-    filtro();
-    e.preventDefault()    
+    e.preventDefault()  
+    filtro();      
 })
 
 function filtro() {
@@ -48,7 +48,7 @@ function filtro() {
         return el.cabello === hairInput.value
     })
     let finalFiltrado = cabelloFiltrado.filter((el)=>{
-        return el.apodo === nickInput.value
+        return el.apodo === nickInput.value.toLowerCase();
     })
     console.log(finalFiltrado);
     escribir(finalFiltrado);
