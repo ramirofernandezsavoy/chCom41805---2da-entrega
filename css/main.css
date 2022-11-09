@@ -210,8 +210,11 @@ width: 90%;
   color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.712);
   border-radius: 15px;
-  font-size: 20px;
-  
+  font-size: 20px;  
+}
+
+.formBusqueda p {
+  font-size: 12px;
 }
 
 .fields {

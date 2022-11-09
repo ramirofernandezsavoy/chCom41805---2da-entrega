@@ -74,18 +74,26 @@ endButton = document.querySelector("#endButton");
 
 // Boton Final (Y Libreria)
 endButton.addEventListener("click", () => {
-    Swal.fire({
-        title: ' Emitiendo orden de arresto',
-        text: "Esta seguro que desea arrestar a este sospechoso?",
-        icon: 'question',
-        showCancelButton: true,
-        confirmButtonColor: '#090125',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Si, emitir orden!'
-      }).then((result) => {
-        if (result.isConfirmed) {          
-          pintarResultado()
-          localStorage.clear();          
-        }
-      })
+    if (nombreFinal.innerText == ">None") {
+        Swal.fire(
+            'La orden de arresto no esta completa.',
+            'Asegurese de que se completaron los datos del perfil.',
+            'warning'
+          )
+    } else {
+        Swal.fire({
+            title: ' Emitiendo orden de arresto',
+            text: "Esta seguro que desea arrestar a este sospechoso?",
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#090125',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, emitir orden!'
+          }).then((result) => {
+            if (result.isConfirmed) {          
+              pintarResultado()
+              localStorage.clear();          
+            }
+          })
+    }    
   });
