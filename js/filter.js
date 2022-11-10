@@ -51,10 +51,19 @@ function filtro() {
         return el.apodo === nickInput.value.toLowerCase();
     })
     console.log(finalFiltrado);
-    escribir(finalFiltrado);
-    finalFiltrado[0].nombre == asesino.nombre ? wol = true : wol = false;
-    console.log(asesino.nombre);  
-    console.log(wol);
+    if (finalFiltrado == "") {
+        Swal.fire(
+            'La busqueda no arrojo resultados',
+            'Asegurese de estar ingresando los datos correctamente',
+            'warning'
+          )
+    } else {
+        escribir(finalFiltrado);
+        finalFiltrado[0].nombre == asesino.nombre ? wol = true : wol = false;
+        console.log(asesino.nombre);  
+        console.log(wol);        
+    }
+    
 }
 function escribir(finalFiltrado){
     nombreFinal.innerText = finalFiltrado[0].nombre
