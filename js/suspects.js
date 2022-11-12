@@ -129,6 +129,12 @@ const sospechosos = [
   personaje10,
 ];
 
+// let sospechosos = "";
+// fetch('/js/personajes.json')
+//   .then((response) => response.json())
+//   .then((json) => sospechosos = (json));    
+
+
 // Seleccion del asesino.
 function randomN() {
   return Math.floor(Math.random() * sospechosos.length + 1);
